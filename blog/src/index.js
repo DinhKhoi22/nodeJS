@@ -26,6 +26,22 @@ app.use(
     }));
 app.use(express.json());
 
+// app.get('/middleware',
+//     function (req, res, next) {
+//         if(['vevjp'].includes(req.query.id)) {
+//             return next();
+//         }
+//         res.status(403).json({
+//             message: 'Forbidden'
+//         })
+//     },
+//     function (req, res, next) {
+//         res.json({
+//             message: 'success'
+//         })
+//     }
+// )
+
 app.use(methodOverride('_method'))
 
 app.use(morgan('combined'));

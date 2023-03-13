@@ -13,6 +13,10 @@
   color: white;
 }
 
+.checkbox-select-all-options {
+  width: 20px;
+}
+
 h1 {
   color: red;
 }
